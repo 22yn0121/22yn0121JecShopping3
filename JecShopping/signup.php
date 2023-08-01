@@ -85,7 +85,7 @@
             <tr>
                 <td>メールアドレス*</td>
                 <td>   
-                    <input type="text" name="email">
+                    <input type="email" name="email">
                     <span style="color:red"><?= @$errs['email']?></span>
                 </td>
                 
@@ -93,7 +93,7 @@
             <tr>
                 <td>パスワード(4文字以上)*</td>
                 <td>
-                    <input type="password"name="password">
+                    <input type="password" name="password" minlength="4">
                     <span style="color:red"><?= @$errs['password']?></span>
                 </td>
                 
@@ -109,7 +109,7 @@
             <tr>
                 <td>お名前*</td>
                 <td>
-                    <input type="text"name="membername">
+                    <input type="text"name="membername"required >
                     <span style="color:red"><?= @$errs['membername']?></span>
                 </td>
                 
@@ -117,7 +117,7 @@
             <tr>
                 <td>郵便番号*</td>
                 <td>
-                    <input type="text" name="zipcode" pattern="/^\d{3}\-\d{4}$/">
+                    <input type="text" name="zipcode"  pattern="\d{3}-\d{4}"title="郵便番号は3桁-4桁でハイフン(-)を入れて入力してください。">
                     <span style="color:red"><?= @$errs['zipcode']?></span>
                 </td>
                 

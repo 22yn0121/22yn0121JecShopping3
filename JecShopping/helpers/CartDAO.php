@@ -113,6 +113,16 @@
             $stmt->bindValue(':memberid',$memberid,PDO::PARAM_INT);
             $stmt->execute();
         }
+
+        //public function cart_num(int $memberid){
+        //    $dbh = DAO::get_db_connect();
+        //    $sql = "SELECT SUM(num) FROM cart WHERE memberid = :memberid";
+        //    $stmt = $dbh->prepare($sql);
+        //    $stmt->bindValue(':memberid',$memberid,PDO::PARAM_INT);
+        //    $stmt->execute();
+        //    $cnum = $stmt;
+        //    return $cnum;
+        //}
         
 
     }

@@ -4,6 +4,7 @@
     $errs = [];
     session_start();
 
+    //ログイン済みの時
     if(!empty($_SESSION['member'])){
         header('Location:index.php');
         exit;
@@ -65,13 +66,13 @@
             <tr>
                 <td>メールアドレス</td>
                 <td>
-                    <input type="email"name="email"autofocus>
+                    <input type="email"name="email"required autofocus>
                 </td>
             </tr>
             <tr>
                 <td>パスワード</td>
                 <td>
-                    <input type="password"name="password">
+                    <input type="password"name="password" >
                 </td>
             </tr>
             <tr>

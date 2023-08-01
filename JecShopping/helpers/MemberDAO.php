@@ -62,7 +62,7 @@
             $stmt = $dbh->prepare($sql);
             $stmt->bindValue(':email',$email,PDO::PARAM_STR);
 
-            if($stmt->fetch() !== false){
+            if($stmt->fetch() == false){
                 return true; //存在する
             }
             else{

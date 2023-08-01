@@ -37,7 +37,7 @@
 <body>
     <?php include"header.php"; ?>
     <?php if(isset($_GET['keyword'])): ?>
-        <?php echo '検索結果' .':'.htmlspecialchars($keyword, ENT_QUOTES, "UTF-8") ?>?>
+        <?php echo '検索結果' .':'.htmlspecialchars($keyword, ENT_QUOTES, "UTF-8") ?>
     <?php endif;?>
     <table id="goodsgroup">
         <?php foreach($goodsgroup_list as $goodsgroup): ?>

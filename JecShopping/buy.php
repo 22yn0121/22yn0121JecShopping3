@@ -29,6 +29,10 @@
     if($ret === true){
         //会員のカートデータを削除する
         $cartDAO->delete_by_memberid($member->memberid);
+
+        //購入完了のメール送信
+        header('Location:../メール送信サンプル/1.メール送信サンプル1(テキストメール).php');
+        exit;
     }
     
 
